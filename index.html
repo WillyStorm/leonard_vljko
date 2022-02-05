@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Survey Form</title>
 </head>
 <body>
     <div id="title">
         <h1>Build a survey form</h1> 
     </div>
     <div id="discription">
-        <p>My survey form</p>
+        <h2>My survey form</h2>
     </div>
   <label action="" id="survey-form">
 <field id="name">
     <label for="name-label" id="name-label">Name</label>
 </br>
-    <input type="name" id="" placeholder="Enter your name:" required>
+    <input type="name" id="name" placeholder="Enter your name:" required>
 </field></br>
 <field id="email">
 
     <label for="Email-label" id="Email-label">Email</label>
 </br>
-    <input type="email" id="" placeholder="Enter your Email:"required>
+    <input type="email" id="email" placeholder="Enter your Email:"required>
 </field>
 </br>
 <field id="number">
     <label for="number-label" id="number-label">Age(optional)</label>
 </br>
-    <input type="Age" id="" placeholder="Enter your Age:" >
+    <input type="Age" id="age" placeholder="Enter your Age:" >
 </field></br></br>
+
 <label for="" id="dropdown">Which option best describes your current role?</label>
 </br>
 <select name="" id="dropdown">
@@ -47,17 +49,9 @@
   <input type="radio" id="Maybe" name="fav_language" value="Maybe">
   <label for="css">Maybe</label><br>
   <input type="radio" id="notsure" name="fav_language" value="notsure">
-  <label for="javascript">Not sure</label></br></br>
-<label for="options">What is your favorite feature of freeCodeCamp?</label></br>
-<select id="options" name="options">
-  <option value="select">Select an option</option>
-  <option value="Challenges">Challenges</option>
-  <option value="Projects">Projects</option>
-  <option value="Community">Community</option>
-  <option value="Open-Source">Open Source</option>
-</select></br></br>
-
-
+  <label for="javascript">Not sure</label>
+</br></br>
+  
 <label for="" id="dropdown">What is your favorite feature of freeCodeCamp? </label>
 </br>
 <select name="" id="dropdown">
@@ -85,7 +79,7 @@
 <input type="checkbox" id="videos" name="videos" value="videos">
 <label for="videos"> Videos</label><br>
 <input type="checkbox" id="meetups" name="meetups" value="meetups">
-<label for="meetups">Meetups</label></label><br>
+<label for="meetups">Meetups</label><br>
 <input type="checkbox" id="Wiki" name="Wiki" value="Wiki">
 <label for="Wiki"> Wiki</label><br>
 <input type="checkbox" id="Forum" name="Forum" value="Forum">
@@ -96,10 +90,10 @@
 </br></br>
 <label for="" id="textarea">Any comments or suggestions?</label>
 </br>
-<textarea name="message" rows="10" cols="30">
+<textarea name="message" id="textarea" >
     Enter your comment here...
     </textarea> </br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" id="submit">
   </form>      
 </body>
 </html>
